@@ -1,0 +1,371 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title>Thunder Security Bot</title>
+    <link href="assets/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/opera.css">
+  <link rel="stylesheet" href="assets/bulma.min.css">
+  
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tippy.js@6/animations/scale.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+  <div id='loader'>
+      <div class="spinner"></div>
+    </div>
+
+  <a id="backtotop" title="Back To Top.">
+      <i class="fa-solid fa-angle-up has-text-white fa-2xl mt-5"></i>
+    </a>
+   <section class="hero bg-base is-fullheight">
+      <nav class="navbar navbar-expand-lg navbar-light" id="opera-nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color:white" href="/"><img src="https://cdn.discordapp.com/avatars/1025895733469130852/8f65381ae87cab7b499cfe123053754a.png?size=1024" class="opera-img"></a> <a class="navbar-brand" style="color:white; font-size:23px" href="#">Thunder</a>
+      <button class="navbar-toggler" id="naa" type="button" data-bs-toggle="collapse" style="cursor: url('assets/icons8-hand-cursor-30.png'), auto;" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="color:white">
+          <li class="nav-item">
+            <a class="nav-link" style="color:white" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:white" href="https://discord.com/oauth2/authorize?client_id=1025895733469130852&scope=bot+applications.commands&permissions=0">Invite</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:white" href="https://discord.gg/kmWBx22cF4">Support</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+        
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" style="color:white" data-bs-toggle="dropdown" aria-expanded="false">
+             Menu <i class="fa-solid fa-angle-down"></i></a>
+              <ul class="dropdown-menu" style="float: right;" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item"  href="#features">Features</a></li>
+                <li><a class="dropdown-item" href="https://discord.com/oauth2/authorize?client_id=1025895733469130852&scope=bot+applications.commands&permissions=0" target="_blank">Invite</a></li>
+                <li><a class="dropdown-item"  href="https://discord.gg/kmWBx22cF4">Support</a></li>
+              </ul>
+            </li>
+               </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+      <div class="hero-body">
+        <div class="">
+          <div class="columns">
+            <div class="column mr-6 mt-12" data-aos="fade-up">
+              <p class="title has-text-white has-text-weight-bold">
+                Thunder Security™ - The Best Security Bot For Discord.
+              </p>
+              <p class="subtitle has-text-grey-light is-size-6 mt-3" id="text">
+                Thunder Security will make your server more safe and protected from raids and nukes!
+              </p>
+              <div class="buttons vert-move">
+                <a href="https://discord.com/api/oauth2/authorize?client_id=979811628566601748&permissions=425037528145&scope=bot%20applications.commands" class="button is-info">
+                  <strong>Invite now!</strong>
+                </a>
+              </div>
+            </div>
+            <div class="column mt-6" data-aos="fade-left">
+              <img
+                class="image has-image-centered vert-move mt-4"
+                src="assets/img/thunder-bot.png"
+                alt="hero image"
+                style="width: 20rem; border-radius: 50%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="has-text-centered" data-tippy-content="Scroll Down">
+        <a href="#stats"
+          ><i
+            class="fa-solid fa-circle-chevron-down fa-lg vert-move2 has-text-white"
+          ></i
+        ></a>
+      </div>
+   </section>
+    <!-- Hero Section End -->
+
+    <!-- Hero Waves Start -->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#1a2634"
+        fill-opacity="1"
+        d="M0,288L24,261.3C48,235,96,181,144,154.7C192,128,240,128,288,149.3C336,171,384,213,432,202.7C480,192,528,128,576,133.3C624,139,672,213,720,213.3C768,213,816,139,864,101.3C912,64,960,64,1008,106.7C1056,149,1104,235,1152,240C1200,245,1248,171,1296,144C1344,117,1392,139,1416,149.3L1440,160L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"
+      ></path>
+    </svg> -->
+    
+    <!-- Features Section Start -->
+    <section id="features" class="section mt-6">
+ <section style="margin-bottom: 0;">
+
+    <section id="stats" class="section mt-6">
+      <div class="has-text-centered">
+        <h1 class="title lined">Information</h1>
+        <div class="line line-center"></div>
+      
+        <div class="d-flex justify-content-center head">
+            <h1 style="font-weight: 900;">
+                <img src="https://cdn.discordapp.com/avatars/1025895733469130852/8f65381ae87cab7b499cfe123053754a.png?size=1024" style="width: 4%;margin-top: -0.5%;"> <span style="font-size: 40px;"><span style="color:#26332a;">Thunder Security</span> <span style="color:#26332a;">|</span> <span style="color:#26332a;">Multifunction Discord Bot</span>
+              </h1>
+        </div>
+        </div>
+        <div class="d-flex justify-content-center subtext">
+            <p style="font-style: italic;color:#26332a;font-size: 30px;">The Best Multifunction Bot ever used!</p>
+        </div>
+      </section>
+       </section>
+      <!-- single feature start (Left) -->
+      <div class="single-feature">
+
+        <div class="columns mt-6">
+          <div class="column mr-6">
+            <h4 class="title">All in one<span class="blurple">#1</span></h4>
+            <p class="subtitle mt-3">A perfect multipurpose bot for your server, it will keep your server <b>clean</b> & <b>safe</b>!
+            </p>
+          </div>
+          <div class="column" data-aos="fade-left">
+            <img
+              class="image has-image-centered"
+              src="https://cdn.discordapp.com/attachments/1041671734975266846/1041671768231915550/image.png"
+              alt="feature1 img"
+              style="width: 65%;border-radius: 12px"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- single feature end (Left) -->
+
+      <!-- single feature start (Right) -->
+      <div class="single-feature">
+        <div class="columns mt-6">
+          <div class="column" data-aos="fade-right">
+            <img
+              class="image has-image-centered"
+              src="https://cdn.discordapp.com/attachments/1041671734975266846/1041672215797702726/image.png"
+              alt="feature1 img"
+              style="width: 65%;border-radius: 12px;"
+            />
+          </div>
+          <div class="column">
+            <h4 class="title">
+              General <span class="has-text-primary">#2</span>
+            </h4>
+            <p class="subtitle mt-3">
+              All data, we kept save and secure to our database, and enhance users experience!.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- single feature end (Right) -->
+
+      <!-- single feature start (Left) -->
+      <div class="single-feature">
+
+        <div class="columns mt-6">
+          <div class="column mr-6">
+            <h4 class="title">
+              Security <span class="has-text-warning">#3</span>
+            </h4>
+            <p class="subtitle mt-3">
+              Thunder is best in case of securing/preventing the server from the raiders and nukers!
+            </p>
+          </div>
+          <div class="column" data-aos="fade-left">
+            <img
+              class="image has-image-centered"
+              src="https://cdn.discordapp.com/attachments/1041671734975266846/1041672449781149787/image.png"
+              alt="feature1 img"
+              style="width: 65%;border-radius: 12px"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- single feature end (Left) -->
+
+      <!-- single feature start (Right) -->
+      <div class="single-feature">
+        <div class="columns mt-6">
+          <div class="column" data-aos="fade-right">
+            <img
+              class="image has-image-centered"
+              src="https://cdn.discordapp.com/attachments/1041671734975266846/1041672622506770452/image.png"
+              alt="feature1 img"
+              style="width: 65%;border-radius: 12px"
+            />
+          </div>
+          <div class="column">
+            <h4 class="title">Information<span class="has-text-info">#4</span></h4>
+            <p class="subtitle mt-3">
+              We don't store any illegal datas! 
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- single feature end (Right) -->
+    </section>
+    <!-- Features Section End -->
+
+    <!-- Stats Section Start -->
+    <section id="stats" class="section mt-6">
+      <div class="has-text-centered">
+        <h1 class="title lined">BotInfo</h1>
+        <div class="line line-center"></div>
+      </div>
+
+      <div class="columns mt-6">
+        <div class="column has-text-centered">
+          <p class="title has-text-weight-bold lined">114</p>
+          <span class="subtitle has-text-weight-bold blurple"><i class="fa-solid fa-server"></i> Servers</span>
+        </div>
+
+        <div class="column has-text-centered">
+          <p class="title has-text-weight-bold lined">Yash !!#9593</p>
+          <span class="subtitle has-text-weight-bold blurple"><i class="fa-solid fa-terminal"></i> Developer</span>
+        </div>
+
+        <div class="column has-text-centered">
+          <p class="title has-text-weight-bold lined">300k</p>
+          <span class="subtitle has-text-weight-bold blurple"><i class="fa-solid fa-users"></i> Users</span>
+        </div>
+      </div>
+    </section>
+    <!-- Stats Section End -->
+
+    <!-- Invite Section Start -->
+    <section class="section mt-6">
+      <div class="columns">
+        <div class="column has-text-left">
+          <p class="title has-text-weight-bold">
+            Ready to try <span class="blurple">[Thunder Security™]</span>?
+          </p>
+          <p class="subtitle mt-3 has-text-gray">
+            A perfect multipurpose bot!
+          </p>
+          <div class="buttons">
+          <a href="https://discord.com/oauth2/authorize?client_id=1025895733469130852&scope=bot+applications.commands&permissions=0" class="button is-blurple is-medium vert-move"
+            ><strong><i class="fa-solid fa-book"></i> Invite Thunder</strong></a
+          >
+</div>
+        </div>
+
+        <div class="column"></div>
+      </div>
+    </section>
+
+         <!-- ======= Footer ======= -->
+
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="container">
+      <div class="copyright">
+            <h1 style="font-size: 25px"><img src="https://cdn.discordapp.com/avatars/1025895733469130852/8f65381ae87cab7b499cfe123053754a.png?size=1024" style="width:45px; border-radius: 15px;"> Thunder Security Bot</h1>
+      </div>
+      <div class="credits">
+        <i class="fa-sharp fa-solid fa-code"></i> and designed by <a href="https://discord.com/users/849359686855950375" target="_blank">Ashton#4218</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+    <!-- Footer Section End -->
+ <script>
+      window.addEventListener('load', function load() {
+        const loader = document.getElementById('loader');
+        setTimeout(function() {
+          loader.classList.add('fadeOut');
+        }, 300);
+      });
+    </script>
+      <script>
+       
+        $(window).on('keydown',function(event)
+    {
+    if(event.keyCode==123)
+    {
+        alert('F12 is disabled in this website!');
+        return false;
+    }
+    else if(event.ctrlKey && event.keyCode==85)
+    {
+        alert('ctrl+u is disabled in this website!')
+        return false;  //Prevent from ctrl+shift+i
+    }
+    else if(event.ctrlKey && event.shiftKey && event.keyCode==73)
+    {
+        alert('ctrl+shift+i is disabled in this website!')
+        return false;  //Prevent from ctrl+shift+i
+    }
+    else if(event.ctrlKey && event.keyCode==73)
+    {
+        alert('ctrl+shift+i is disabled in this website!')
+        return false;  //Prevent from ctrl+shift+i
+    }
+});
+$(document).on("contextmenu",function(e)
+{
+alert('Right click is disabled in this website!')
+e.preventDefault();
+});
+          
+
+        // back to top
+var btn = $("#backtotop");
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 100) {
+    btn.addClass("show");
+  } else {
+    btn.removeClass("show");
+  }
+});
+
+btn.on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: 0 }, "300");
+});
+      </script>
+
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
