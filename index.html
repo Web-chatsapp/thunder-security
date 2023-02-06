@@ -100,18 +100,8 @@
         ></a>
       </div>
    </section>
-    <!-- Hero Section End -->
-
-    <!-- Hero Waves Start -->
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#1a2634"
-        fill-opacity="1"
-        d="M0,288L24,261.3C48,235,96,181,144,154.7C192,128,240,128,288,149.3C336,171,384,213,432,202.7C480,192,528,128,576,133.3C624,139,672,213,720,213.3C768,213,816,139,864,101.3C912,64,960,64,1008,106.7C1056,149,1104,235,1152,240C1200,245,1248,171,1296,144C1344,117,1392,139,1416,149.3L1440,160L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"
-      ></path>
-    </svg> -->
     
-    <!-- Features Section Start -->
+    
     <section id="features" class="section mt-6">
  <section style="margin-bottom: 0;">
 
@@ -131,7 +121,7 @@
         </div>
       </section>
        </section>
-      <!-- single feature start (Left) -->
+      
       <div class="single-feature">
 
         <div class="columns mt-6">
@@ -150,9 +140,8 @@
           </div>
         </div>
       </div>
-      <!-- single feature end (Left) -->
 
-      <!-- single feature start (Right) -->
+      
       <div class="single-feature">
         <div class="columns mt-6">
           <div class="column" data-aos="fade-right">
@@ -173,9 +162,6 @@
           </div>
         </div>
       </div>
-      <!-- single feature end (Right) -->
-
-      <!-- single feature start (Left) -->
       <div class="single-feature">
 
         <div class="columns mt-6">
@@ -197,9 +183,6 @@
           </div>
         </div>
       </div>
-      <!-- single feature end (Left) -->
-
-      <!-- single feature start (Right) -->
       <div class="single-feature">
         <div class="columns mt-6">
           <div class="column" data-aos="fade-right">
@@ -218,11 +201,9 @@
           </div>
         </div>
       </div>
-      <!-- single feature end (Right) -->
+      
     </section>
-    <!-- Features Section End -->
-
-    <!-- Stats Section Start -->
+     
     <section id="stats" class="section mt-6">
       <div class="has-text-centered">
         <h1 class="title lined">BotInfo</h1>
@@ -246,10 +227,7 @@
         </div>
       </div>
     </section>
-    <!-- Stats Section End -->
-
-    <!-- Invite Section Start -->
-    <section class="section mt-6">
+     <section class="section mt-6">
       <div class="columns">
         <div class="column has-text-left">
           <p class="title has-text-weight-bold">
@@ -269,8 +247,7 @@
       </div>
     </section>
 
-         <!-- ======= Footer ======= -->
-
+         
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
     <div class="container">
@@ -281,10 +258,7 @@
         <i class="fa-sharp fa-solid fa-code"></i> and designed by <a href="https://discord.com/users/849359686855950375" target="_blank">Ashton#4218</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
-
-
-    <!-- Footer Section End -->
+  </footer>
  <script>
       window.addEventListener('load', function load() {
         const loader = document.getElementById('loader');
@@ -305,18 +279,17 @@
     else if(event.ctrlKey && event.keyCode==85)
     {
         alert('ctrl+u is disabled in this website!')
-        return false;  //Prevent from ctrl+shift+i
+        return false;  
     }
     else if(event.ctrlKey && event.shiftKey && event.keyCode==73)
     {
         alert('ctrl+shift+i is disabled in this website!')
-        return false;  //Prevent from ctrl+shift+i
+        return false;  
     }
     else if(event.ctrlKey && event.keyCode==73)
     {
         alert('ctrl+shift+i is disabled in this website!')
-        return false;  //Prevent from ctrl+shift+i
-    }
+        return false;   }
 });
 $(document).on("contextmenu",function(e)
 {
@@ -325,7 +298,7 @@ e.preventDefault();
 });
           
 
-        // back to top
+        
 var btn = $("#backtotop");
 
 $(window).scroll(function () {
@@ -349,20 +322,20 @@ btn.on("click", function (e) {
 
   closeBtn.addEventListener("click", ()=>{
     sidebar.classList.toggle("open");
-    menuBtnChange();//calling the function(optional)
+    menuBtnChange();
   });
 
-  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+  searchBtn.addEventListener("click", ()=>{ 
     sidebar.classList.toggle("open");
-    menuBtnChange(); //calling the function(optional)
+    menuBtnChange(); 
   });
 
   // following are the code to change sidebar button(optional)
   function menuBtnChange() {
    if(sidebar.classList.contains("open")){
-     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
    }else {
-     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
    }
   }
 </script>
